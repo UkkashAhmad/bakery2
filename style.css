@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+  }
+  
+  .navbar {
+    background-color: #FF5733; /* Spicy orange background */
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #E64A19; /* Darker orange on hover */
+    transition: background-color 0.3s;
+  }
+
+   .footer {
+    background-color: #FF5733; /* Spicy orange background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+    
+
+  .container {
+    display: flex;
+    padding: 20px;
+  }
+
+  .item-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item {
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .item-image {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .item-details {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cart-sidebar {
+    flex-basis: 300px;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #FF6B6B; /* Spicy red color */
+    color: white;
+    overflow-y: auto;
+    display: none; /* Hide the cart initially */
+  }
+
+  .cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+  }
+
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+
+  .total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .toggle-cart {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 768px) {
+    .slider-item img {
+      width: 100%; /* Make the images full width */
+      height: auto; /* Auto-adjust the height */
+    }
+  }
